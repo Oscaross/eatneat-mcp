@@ -37,7 +37,7 @@ class EatNeatMCP {
         do {
             try await transport.run()
         } catch {
-            fputs("MCP server error: \(error)\n", stderr)
+            print("Error with MCP server starting.")
         }
     }
     
