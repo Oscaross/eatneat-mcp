@@ -7,6 +7,7 @@
 // Temporary MCP server definition to spool up locally.
 
 import Foundation
+import FoundationNetworking // distinct module for linux machines on Render
 import SwiftMCP
 import Dispatch
 
