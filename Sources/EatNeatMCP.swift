@@ -20,7 +20,7 @@ class EatNeatMCP {
         let portEnv = ProcessInfo.processInfo.environment["PORT"]
         let port = Int(portEnv ?? "8080") ?? 8080
 
-        let transport = HTTPSSETransport(server: server, port: port)
+        let transport = HTTPSSETransport(server: server, port: port, host: "0.0.0.0")
 
         // Auth layer
         if let token = ProcessInfo.processInfo.environment["MCP_TOKEN"] {
