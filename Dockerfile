@@ -18,7 +18,7 @@ RUN swift build -c release
 ENV PORT=8080
 
 # Document the port the app listens on
-EXPOSE 8080
+EXPOSE 10000
 
 # Run the compiled server
 CMD [".build/release/EatNeatMCP"]
